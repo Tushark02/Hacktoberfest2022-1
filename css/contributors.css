@@ -15,7 +15,7 @@
   --black: white;
   --gray: black;
   --text: rgb(242, 244, 251);
-  --box: rgb(61 63 73);
+  --box: rgb(61 62 73);
   --box-hover: rgb(57 148 255);
   --nav-color: #1e1e28;
   --footer-color: #ededed;
@@ -69,7 +69,9 @@ body {
 }
 body {
   margin: 0;
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1rem;
   font-weight: 500;
   line-height: 1.5;
@@ -81,12 +83,12 @@ body {
   z-index: 1000;
   display: none;
   position: fixed;
-  bottom: 20px;
-  right: 30px;
+  bottom: 80px;
+  right: 40px;
   width: 40px;
   height: 40px;
-  color: #7c7575;
-  background-color: rgba(255, 255, 255, 0.1);
+  color: #000;
+  background-color: var(--lightt);
   cursor: pointer;
   outline: 0;
   border: none;
@@ -100,13 +102,66 @@ body {
 #back-to-top-btn:focus,
 #back-to-top-btn:hover {
   background: 0 0;
-  border: 2px solid rgba(255, 255, 255, 0.2);
+  border: 2px solid var(--lightt);
   transform: translateY(-7px);
   transition: 0.5s;
+}
+.light #back-to-top-btn {
+  color: #7c7575;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 .container {
   position: relative;
   color: var(--container-text);
+}
+.container p {
+  width: max-content;
+  margin: 0;
+}
+.inputs {
+  position: relative;
+}
+.form-control,
+.form-control:focus,
+.from-control:active {
+  text-indent: 30px;
+  border: 1px solid var(--darkt) !important;
+  align-content: normal;
+  background: var(--darkbg);
+  outline: 0;
+  color: #eee;
+  width: 20rem;
+  accent-color: var(--lightt);
+  box-shadow: none;
+}
+@media (max-width: 768px) {
+  .form-control,
+  .form-control:focus,
+  .from-control:active {
+    width: 14rem;
+  }
+}
+/* To Make Input field transparent during auto-complete */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 5000s;
+  -webkit-text-fill-color: #fff !important;
+}
+
+.light .form-control {
+  background-color: #fff;
+  border-color: #eee;
+  color: #000;
+  outline: 0;
+  box-shadow: none;
+}
+.inputs i {
+  position: absolute;
+  top: 12px;
+  left: 10px;
+  color: #b8b9bc;
 }
 a {
   color: #000;
@@ -121,6 +176,7 @@ a:hover {
   cursor: default;
   font-size: 2rem;
   font-family: "Special Elite", cursive;
+  transition: all 1s;
 }
 .heading:hover {
   color: #fe0c43;
@@ -174,9 +230,11 @@ a:hover {
   z-index: 10;
 }
 .box-item:hover {
-  color: #fff;
+  size: 30cm;
+  color: rgb(255, 255, 255);
   letter-spacing: 2px;
   font-weight: 700;
+  /* transform: rotate(3deg); */
   transition: left 1s cubic-bezier(0.86, 0, 0.07, 1);
 }
 .box-item::before {
@@ -240,57 +298,6 @@ a:hover {
   background-color: #c1c1c1;
   outline: 0;
   border-radius: 0;
-}
-.theme-switch {
-  margin-right: 2px;
-  padding: 0 6px;
-  display: flex;
-  height: 34px;
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 60px;
-  justify-content: space-between;
-  border-style: solid;
-  border-radius: 34px;
-  align-items: center;
-}
-.theme-switch input {
-  display: none;
-}
-.slider {
-  background-color: transparent;
-  bottom: 0;
-  cursor: pointer;
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  margin: auto;
-  transition: 0.4s;
-}
-.slider:before {
-  background-color: #ffd104;
-  bottom: 4px;
-  content: "";
-  height: 24px;
-  left: 4px;
-  position: absolute;
-  transition: 0.4s;
-  width: 24px;
-}
-input:checked + .slider {
-  background-color: transparent;
-}
-input:checked + .slider:before {
-  transform: translateX(23px);
-  background-color: #fff;
-}
-.slider.round {
-  border-radius: 34px;
-}
-.slider.round:before {
-  border-radius: 50%;
 }
 #stats {
   background-color: var(--footer-color);
@@ -545,6 +552,8 @@ body {
   border-radius: var(--toggleHeight);
   transition: all 0.5s ease-in-out;
   background: var(--bgColor--night);
+  cursor: pointer;
+  margin: 0 0 0 10px;
 }
 .day {
   background: #ffbf71;
@@ -600,4 +609,29 @@ body {
 }
 #myBtn:hover {
   background-color: #555;
+}
+
+#animation {
+  transition: all 1s;
+}
+
+#animation:hover {
+  transform: scale(1.1);
+}
+.box #loadMore u {
+  text-decoration: none;
+}
+.box #loadMore {
+  padding: 10px;
+  margin: 0;
+  border-radius: 10px;
+  background-color: #fc3e6a;
+  color: whitesmoke;
+  border: none;
+  transition: ease-out 0.4s;
+}
+.box #loadMore:hover {
+  color: black;
+  font-weight: 600;
+  box-shadow: inset 120px 0 0 0 #fe0c43;
 }
