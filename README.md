@@ -1,14 +1,21 @@
-Hacktoberfest-2022
-# Hacktoberfest {[Live Website](https://fineanmol.github.io/Hacktoberfest2022/Contributors.html)}
+Hacktoberfest-2023
+
+**Checkout this Project as well [Annoying Button😡](https://annoyingsubmitbutton.netlify.app/) , It's hacktoberfest github : [https://github.com/fineanmol/Annoying-submit-button](https://github.com/fineanmol/Annoying-submit-button)**
+
+
+# Submit your PR on this new repo [Hacktoberfest](https://github.com/fineanmol/hacktoberfest) , There we are merging all PR. 
+
+In this current repo, there are alot of conflicts, we are not merging until all conflicts get resolved.
+Hacktoberfest { [Live Website](https://fineanmol.github.io/Hacktoberfest2023/)}
 
 
 **This is a beginner-friendly project to help you get started with your
-[hacktoberfest](https://hacktoberfest.digitalocean.com/). If you don't know where to start, feel free to watch the videos linked below, and read the contribution rules. Happy hacking <3 💙 !!**
+[hacktoberfest](https://hacktoberfest.digitalocean.com/). If you don't know where to start, feel free to watch the videos linked below, and read the contribution rules. Happy Learning <3 💙 !!**
 
 P.S. Star ⭐ and Share this repository, if you had fun!! 😍
 
-![Hacktoberfest 2021](https://hacktoberfest.digitalocean.com/_nuxt/img/logo-hacktoberfest-full.f42e3b1.svg)
-![Event Completed](https://raw.githubusercontent.com/fineanmol/Hacktoberfest2022/master/scripts/hacktoberPest/Event_Completed.png)
+Hacktoberfest 2023
+![Event Completed](/scripts/Event_Completed_.png)
 
 # 📌 Videos 📽️:
 
@@ -17,14 +24,13 @@ P.S. Star ⭐ and Share this repository, if you had fun!! 😍
 - [Merge Conflict / comment](https://youtu.be/zOx5PJTY8CI)
 
 
-# Contribution rules📚:
+# Contribution Rules📚:
 
-- The project must work when opening Contributors.html
 - You are allowed to make pull requests that break the rules. We just merge it ;)
 - Do NOT add any build steps e.g npm install (we want to keep this a simple static site)
 - Do NOT remove other content.
 - Styling/code can be pretty, ugly or stupid, big or small as long as it works
-- Add your name to the Contributors.html file
+<!-- - Add your name to the contributorsList file. -->
 - Try to keep pull requests small to minimize merge conflicts
 
 
@@ -33,13 +39,12 @@ P.S. Star ⭐ and Share this repository, if you had fun!! 😍
 - Fork this repo (button on top)
 - Clone on your local machine
 
-```
-git clone https://github.com/fineanmol/Hacktoberfest2022.git
-
+```terminal
+git clone https://github.com/fineanmol/Hacktoberfest2023.git
 ```
 - Navigate to project directory.
-```
-cd Hacktoberfest2022
+```terminal
+cd Hacktoberfest2023
 ```
 
 - Create a new Branch
@@ -47,8 +52,10 @@ cd Hacktoberfest2022
 ```markdown
 git checkout -b my-new-branch
 ```
-- Add your contribution
-```
+
+<!--- - Add your Name to `contributors/contributorsList.js`. -->
+
+```markdown
 git add .
 ```
 - Commit your changes.
@@ -57,7 +64,7 @@ git add .
 git commit -m "Relevant message"
 ```
 - Then push 
-```
+```markdown
 git push origin my-new-branch
 ```
 
@@ -71,7 +78,7 @@ git push origin my-new-branch
 An easy way to avoid conflicts is to add an 'upstream' for your git repo, as other PR's may be merged while you're working on your branch/fork.   
 
 ```terminal
-git remote add upstream https://github.com/fineanmol/Hacktoberfest2022
+git remote add upstream https://github.com/fineanmol/Hacktoberfest2023
 ```
 
 You can verify that the new remote has been added by typing
@@ -96,7 +103,7 @@ For more information on syncing forks [read this article from Github](https://he
 
 # FAQs (Frequently Asked Questions)
 
-- Who can contribute?
+- Who all can contribute?
   - Anyone with a github account and who is signed up for
 [hacktoberfest](https://hacktoberfest.digitalocean.com/) :)
 - Are you getting paid for this?
@@ -109,16 +116,22 @@ For more information on syncing forks [read this article from Github](https://he
 
 - Should I come closer to the text saying 'Don't come closer' on the left side of the home tab ?
   - Nope.
-- How many pull request (PR) must be made, if I want to get an awesome tshirt from Hacktoberfest 2022?
+- How many pull request (PR) must be made, if I want to get an awesome tshirt from Hacktoberfest 2023?
   - 4
-- How do I track my progress to get an awesome shirt from Hacktoberfest 2022?
+- How do I track my progress to get an awesome shirt from Hacktoberfest 2023?
   - [go to :](https://hacktoberfest.digitalocean.com/profile/). (Check Out Your Own Stats at Right Top)
-- What is the duration of Hacktoberfest 2022?
-  - It is from 1st october to 31st october 2022...
+- What is the duration of Hacktoberfest 2023?
+  - It is from 1st october to 31st october 2023...
 - What is the event for?
-  - For the open source community engagement
+  - For the open source community engagement and learn how to contribute to open source.
 
 
 
 
 ###### *We will do our best to merge as much as possible from everyone. However, time is limited and the merge conflicts are horrible :astonished: <3*
+<br>
+
+## Our Top Contributors 
+<p align="center"><a href="https://github.com/fineanmol/Hacktoberfest2023/graphs/contributors">
+  <img src="https://contributors-img.web.app/image?repo=fineanmol/Hacktoberfest2023" />
+</a></p>
